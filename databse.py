@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine,text
 import os 
-from dotenv import load_dotenv
-load_dotenv()
+# from dotenv import load_dotenv
+# load_dotenv()
 
 passkey = os.environ["CLOUD_PASSWORD"]
 db_cred=f"mysql+mysqlconnector://avnadmin:{passkey}@mysql-3fe3b451-learning-flask.j.aivencloud.com:14195/defaultdb?charset=utf8mb4"
