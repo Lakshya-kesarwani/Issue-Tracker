@@ -1,0 +1,27 @@
+
+
+#navbar-details{
+    display: inline;
+    margin: auto 0;
+    margin: 0px 400px 0px 400px;
+
+.head{
+    size: 140px;
+
+}
+}
+img{
+    height: 40px;
+    width: 40px;
+}
+#nav{
+    display: inline-block;
+    text-align: center;
+}
+nav{
+    padding: 10px 20px 10px  20px;
+    border-bottom: 1px solid black;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+}
