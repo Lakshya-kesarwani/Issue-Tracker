@@ -1,0 +1,98 @@
+
+body{
+    background: #b6ebfa;
+    margin: 0px;
+}
+#navbar-details{
+    display: inline;
+    margin: auto 0;
+    margin: 0px 400px 0px 400px;
+
+
+}
+img{
+    height: 60px;
+    width: 60px;
+    padding-top: 0px;
+    padding-left: 0px;
+;
+}
+a{
+    text-decoration: none;
+}
+#nav-text{
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-right: 14px;
+    
+    margin: 0 0 0 450px;
+    color: rgb(0, 49, 91);
+    display: inline;
+    border-radius: 30px;
+
+    border: 0.5px solid rgb(79, 72, 62);
+}
+nav{
+    padding: 0px 20px 4px  0px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+    background: #cffaa6;
+    height:55px;
+}
+#main-body{
+    width:100%;
+    margin-left: 20%;
+}
+
+.cards{
+
+    margin-top: 270px;
+    margin-right: 80px;
+    box-shadow: #cffaa6 5px 5px 24px;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+border: .2px black solid;
+border-radius: 24px;
+background: #ffdfd7;
+
+}
+.cards:hover{
+    box-shadow: #FFFDB5 6px 6px 14px;
+    transition: 500ms;
+}
+button{
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    border-style: groove;
+    border: 1px solid #ffdfd7;
+
+    background: #ffdfd7;
+    font-size: 18px;
+margin: 50px;
+margin-top: 0px;
+margin-left:50px;
+box-shadow: 0px 0px 25px #e26912;
+}
+button:hover{
+    background: #ffbebc;
+    box-shadow: 0px 0px 15px #cffaa6;
+    border-color: #ffbebc;
+    color: #b6ebfa;
+    a{
+        color: rgb(0, 49, 91);
+    }
+}
+.card-text{
+    width: 140px;
+    height: 120px;
+    margin: 20px 30px 0px 30px;
+    font-size: 32px;
+    text-align: center;
+}

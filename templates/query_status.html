@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Query Status</title>
+    <link rel="stylesheet" href="/static/query_status.css">
+</head>
+<body>
+    <nav>
+        <span id="logo">
+           <a href="/"> <img src="/static/logo.jpg" alt=""></a>
+        <P  id="nav-text">Expert Tech Support at Your Service</P>
+        </span>
+    </nav>
+    <div id="main-body">
+        <div> <p>See the Status of ur existing Queries</p>
+            
+    <form method="post" action="{{ url_for('query_status') }}">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="mobile">Mobile Number:</label>
+        <input type="text" id="mobile" name="mobile" required>
+        <br>
+        <input id="button" type="submit" value="Check Status">
+    </form>
+    <div id="details">
+        {% if user_issues %}
+        <ul>
+            {% for issue in user_issues %}
+            <li>
+                <strong>Issue:</strong> {{ issue.issue }} <br>
+                <strong>Status:</strong> {% if issue.is_open %}Open{% else %}Closed{% endif %}
+                <br>
+            </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+</div>
+</div>
+
+</body>
+</html>

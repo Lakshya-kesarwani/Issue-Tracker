@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/list.css">
+</head>
+<body>
+    <nav>
+        <span id="logo">
+           <a href="/"> <img src="/static/logo.jpg" alt=""></a>
+        <P  id="nav-text">Expert Tech Support at Your Service</P>
+        <form action="/admin">
+            <button>LOGOUT</button>
+        </form>
+        </span>
+    </nav>
+    <div id="main-body">
+        <h1>Admin Dashboard</h1>
+        <ul>
+            {% for issue in issues %}
+            <li>
+                <strong>Issue ID :</strong> {{ issue.id }} <br>
+                <strong>Name:</strong> {{ issue.name }} <br>
+                <strong>Email:</strong> {{ issue.email }} <br>
+                <strong>Mobile:</strong> {{ issue.mobile }} <br>
+                <strong>Issue:</strong> {{ issue.issue }} <br>
+                <strong>Description:</strong> {{ issue.description }} <br>
+                <strong>Image Link:</strong> {{ issue.image_link }} <br>
+                <strong>Status:</strong>
+                <form method="post" action="{{ url_for('dashboard') }}" style="display: inline-block;">
+                    <input type="hidden" name="issue_id" value="{{issue.id}}">
+                    <input type="checkbox" id="is_open" name="is_open" value="true" {% if issue.is_open %}checked {%else%} {% endif %} onchange="this.form.submit()">
+                    <label for="is_open">Open</label>
+                </form>
+                <br>
+                <br>
+                <br>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

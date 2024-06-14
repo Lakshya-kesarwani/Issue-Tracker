@@ -1,0 +1,135 @@
+body {
+    background: #b6ebfa;
+    text-align: center;
+    margin: 0;
+}
+#logo{height: 60px;
+    width: 60;
+    padding: 0;
+    margin: 0;
+    position:absolute;
+    left:0;
+    top:0;
+}
+#navbar{
+    width: 100%;
+    height: 60px;
+    background: #cffaa6;
+}
+.form-container {
+    background-color: #ffdfd7;
+    border-radius: 1%;
+    padding: 10px;
+    margin: 5vh auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-header {
+    color: darkblue;
+}
+
+.adminlog{
+    text-decoration: none;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    border: 2px solid rgb(0, 0, 78);
+    padding: 3px;
+    border-radius: 5px;
+    background-color: #cffaa6;
+}
+
+.form-input {
+    padding: 2px;
+}
+p{
+    /* text-align: center; */
+    position: absolute;
+    top: 13px;
+    left: 450px;
+    font-size:30px;
+    padding-left: 014px;
+    padding-right: 14px;
+    
+    margin: 0 0 0 0px;
+    color: rgb(0, 49, 91);
+    display: inline;
+    border-radius: 30px;
+
+    border: 0.1px solid rgb(79, 72, 62);
+}
+#button {
+    padding: 12.5px 30px;
+    border: 0;
+    border-radius: 100px;
+    background-color: #4fd9ff;
+    color: #000000;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+#file {
+    width: 100%;
+}
+
+h3 {
+    margin-left: 0;
+}
+
+input, textarea, #s3 {
+    width: 70%;
+    margin: 10px 50px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+#Form-head {
+    margin-left: 0;
+    font: 1.7em sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.left-container {
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+}
+
+#side-text {
+    font-size: 23px;
+    font-weight: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.help img {
+    width: 100%;
+    max-width: 252px;
+}
+
+@media (min-width: 768px) {
+    .form-container {
+        flex-direction: row;
+    }
+    .form-wrapper {
+        flex: 1;
+        max-width: 60%;
+    }
+    .left-container {
+        max-width: 40%;
+    }
+}
+
+@media (max-width: 767px) {
+    .form-container {
+        flex-direction: column;
+    }
+    .form-wrapper, .left-container {
+        max-width: 100%;
+    }
+}

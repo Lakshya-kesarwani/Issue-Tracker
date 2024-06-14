@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+<link rel="stylesheet" href="/static/admin.css">
+</head>
+<body>
+    <nav>
+        <span id="logo">
+           <a href="/"> <img src="/static/logo.jpg" alt=""></a>
+        <P  id="nav-text">Expert Tech Support at Your Service</P>
+        </span>
+    </nav>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        {% for category, message in messages %}
+            <div class="{{ category }}">{{ message }}</div>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+    <div id="main-body">
+        <div> <p>Login for admin page</p>
+            
+            <br>
+            <form  method="post">
+            <div id="admin-detail">
+            <label for="username">Username</label>
+            <input type="text" name="username">
+            <br>
+            <label for="password">Password&nbsp;</label>
+            <input type="password" name="password">
+            </div>
+            <button>Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
