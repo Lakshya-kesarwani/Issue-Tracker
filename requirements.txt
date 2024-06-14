@@ -3,3 +3,5 @@ gunicorn
 sqlalchemy
 flask
 mysql
+flask-mysql-connector
+mysql.connector
